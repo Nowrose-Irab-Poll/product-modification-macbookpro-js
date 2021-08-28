@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mac Book Pro</title>
+
+        <!-- tailwind -->
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+        <!-- Main Start -->
+        <main class="m-8  w-2/3 mx-auto">
+            <div class="container grid lg:grid-cols-2 gap-12 border-b p-4">
+                <!-- image start -->
+                <div>
+                    <img src="images/mac.png" alt="mac-book-pro-image">
+                </div>
+                <!-- image end -->
+                <div>
+                    <!-- intro start -->
+                    <section>
+                        <h1 class="text-4xl font-semibold">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                        <p class="mt-2 text-sm">Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                            efficiency
+                            cores,
+                            7-core GPU,
+                            and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4
+                            ports
+                            Magic Mouse Magic Keyboard - US English</p>
+
+                    </section>
+                    <!-- intro end -->
+                    <!-- memory start -->
+                    <section id="memory-section" class="mt-8">
+                        <h3 class="font-bold mb-2">Memory</h3>
+                        <button id="memory-btn-1"
+                            class="border-2 me-1 mb-1 p-2 rounded hover:bg-black hover:text-white focus:ring-2 focus:ring-gray-600">8GB
+                            unified
+                            memory</button>
+                        <button id="memory-btn-2"
+                            class="border-2 me-1 mb-1 p-2 rounded hover:bg-black hover:text-white focus:ring-2 focus:ring-gray-600">16GB
+                            unified memory</button>
+                    </section>
+                    <!-- memory end -->
+                    <!-- storage start -->
+                    <section id="storage-section" class="mt-8">
+                        <h3 class="font-bold mb-2">Storage</h3>
+                        <button id="storage-btn-1"
+                            class="border-2 me-1 mb-1 p-2 rounded hover:bg-black hover:text-white focus:ring-2 focus:ring-gray-600">256GB
+                            SSD storage</button>
+                        <button id="storage-btn-2"
+                            class="border-2 me-1 mb-1 p-2 rounded hover:bg-black hover:text-white focus:ring-2 focus:ring-gray-600">512GB
+                            SSD storage</button>
+                        <button id="storage-btn-3"
+                            class="border-2 me-1 mb-1 p-2 rounded hover:bg-black hover:text-white focus:ring-2 focus:ring-gray-600">1TB
+                            SSD storage</button>
+                    </section>
+                    <!-- storage end -->
+                    <!-- delivery start -->
+                    <section id="delivery-section" class="mt-8">
+                        <h3 class="font-bold mb-2">Choose your delivery option</h3>
+                        <button id="delivery-btn-1"
+                            class="border-2 me-1 mb-1 p-2 rounded hover:bg-black hover:text-white focus:ring-2 focus:ring-gray-600">Friday,
+                            Aug 25 FREE Prime Delivery</button>
+                        <button id="delivery-btn-2"
+                            class="border-2 me-1 mb-1 p-2 rounded hover:bg-black hover:text-white focus:ring-2 focus:ring-gray-600">Friday,
+                            Aug 21 Delivery charge $20</button>
+                    </section>
+                    <!-- delivery end -->
+                    <!-- price start -->
+                    <section class="mt-8">
+                        <table class="table-fixed  font-bold">
+                            <thead>
+                                <tr>
+                                    <th class="w-4/5"></th>
+                                    <th class="w-3/4"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="p-2">Best Price</td>
+                                    <td class="p-2 pr-6">$<span id="price">1299</span></td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2">Extra Memory Cost</td>
+                                    <td class="p-2 pr-6">$<span id="memory-cost">0</span></td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2">Extra Storage Cost</td>
+                                    <td class="p-2 pr-6">$<span id="storage-cost">0</span></td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2">Delivery charge</td>
+                                    <td class="p-2 pr-6">$<span id="delivery-cost">0</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="border-t-2 border-black">
+                                <tr class="border-b ">
+                                    <td class="p-2">Total Price</td>
+                                    <td class="p-2 pr-6">$<span id="total-price">1299</span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                    <!-- price end -->
+                    <!-- PROMO start -->
+                    <section class="mt-8">
+                        <h4 class="font-medium">Add Promo code</h4>
+                        <input id="promo-input"
+                            class="border-2 m-2 rounded focus:ring-2 focus:ring-blue-600 focus:outline-none"
+                            type="text">
+                        <button id="apply-btn"
+                            class="border-2 m-1 px-4 py-2 rounded bg-red-500 text-white hover:bg-red-600 hover:bg-black focus:ring-2 focus:ring-red-300">Apply</button>
+                    </section>
+                    <!-- PROMO end -->
+                </div>
+            </div>
+            <section class="mt-4">
+                <h1 class="text-4xl font-semibold text-center">Total: $<span id="final-price">1299</span></h1>
+            </section>
+        </main>
+        <!-- Main End -->
+
+        <!-- javascript -->
+        <script src="control.js"></script>
+    </body>
+
+</html>
